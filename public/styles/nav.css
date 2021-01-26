@@ -1,0 +1,16 @@
+nav {
+  font-family: "Bungee", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 120px;
+  background: #4056a1;
+  color: #ffffff;
+  padding: 1.5em;
+}
+
+nav p {
+  margin: 0;
+  font: normal;
+  font-family: sans-serif;
+}
