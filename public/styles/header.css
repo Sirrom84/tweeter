@@ -5,7 +5,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffe9e8;
-  background-image: url("https://www.transparenttextures.com/patterns/beige-paper.png");
+  background-color: #eee2dc;
+  /* background-image: url("https://www.transparenttextures.com/patterns/type.png"); */
+
+  color: #123c69;
+  text-align: center;
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e0ae00, 0 0 20px #e0ae00,
+    0 0 25px #e0ae00, 0 0 30px #e0ae00, 0 0 35px #e0ae00; SAVE FOR DARK MODE*/
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
