@@ -1,0 +1,24 @@
+section.new-tweet > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+textarea#tweet-text {
+  display: flex;
+  background: transparent;
+  border: none;
+  border-bottom: solid black;
+  outline: none;
+  resize: none;
+}
+section {
+  width: 100%;
+}
+div.tweet-button {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 1%;
+  font-family: "Bungee", sans-serif;
+  color: #ac3b61;
+}
