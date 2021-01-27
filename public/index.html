@@ -45,7 +45,7 @@
     </header>
     <!-- Page-specific (main) content here -->
     
-      <main class="container">
+      <main class="tweet-container">
       <section class="new-tweet">
        
         <form action="/tweets" method="POST">
@@ -56,20 +56,13 @@
             <output name="counter" class="counter black" for="tweet-text">140</output>
           </div>
         </form>
-        <article class="tweet-display">
-            <header class='article-header'>
-              <div class= "header-icon">
-                <img src="/images/profile-hex.png">
-              </div>
-              <div class="legalName" >John smith</div>
-              <div class= "userName">@jsmith</div>
-            </header>
-            <body class= "article-body">
-              <p class= "tweet-paragraph">Tweeters body</p>
-            </body>
-            <footer class ="article-footer">10 days ago</footer>
-          </article>
       </section>
+      
+      <section id="tweet-container"></section>
       </main>
       </body>
 </html>
+
+
+<!-- 
+ -->

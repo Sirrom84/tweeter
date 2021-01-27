@@ -1,7 +1,5 @@
-//tweet-text is the textarea in index.html for the tweet form
-//pair programed with @
 $(document).ready(function () {
-  console.log(" loading your jQuerry!");
+  console.log(" loading your jQuery!");
   $(".tweet-text").on("input ", function () {
     let myLength = $(".tweet-text").val().length; 
     $(".counter").text(140 - myLength);
