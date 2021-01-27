@@ -2,6 +2,7 @@ header {
   display: flex;
   height: 400px;
   width: auto;
+  padding-top: 10em; /* To prevent the fixed navbar from covering*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
