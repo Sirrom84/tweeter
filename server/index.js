@@ -6,7 +6,7 @@ const PORT          = 8080;
 const express       = require("express");
 const bodyParser    = require("body-parser");
 const app           = express();
-
+const composer      = require("../public/scripts/composer-char-counter")
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 

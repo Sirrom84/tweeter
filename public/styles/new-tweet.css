@@ -3,7 +3,7 @@ section.new-tweet > form {
   display: flex;
   flex-direction: column;
 }
-textarea#tweet-text {
+textarea.tweet-text {
   display: flex;
   background: transparent;
   border: none;
@@ -21,4 +21,15 @@ div.tweet-button {
   padding: 1%;
   font-family: "Bungee", sans-serif;
   color: #ac3b61;
+}
+
+.counter {
+  color: black;
+}
+
+.black {
+  color: black;
+}
+.red {
+  color: red;
 }
