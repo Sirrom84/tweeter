@@ -14,17 +14,14 @@ textarea.tweet-text {
 section {
   width: 100%;
 }
-div.tweet-button {
+.tweet-button {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
+  flex-grow: 0;
   padding: 1%;
   font-family: "Bungee", sans-serif;
-  color: #ac3b61;
-}
 
-.counter {
-  color: black;
+  color: grey;
 }
 
 .black {
