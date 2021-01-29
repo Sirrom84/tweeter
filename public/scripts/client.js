@@ -37,6 +37,14 @@ $(document).ready(function () {
         },
       });
     });
+
+    $("#new-tweet-button").click(function (event) {
+      if ($(".new-tweet").is(":visible")) {
+        $(".new-tweet").slideUp();
+      } else {
+        $(".new-tweet").slideDown();
+      }
+    });
   });
 
   function createTweetElement(tweetObj) {

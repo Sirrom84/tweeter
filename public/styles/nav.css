@@ -12,6 +12,15 @@ nav {
   color: white;
   text-align: center;
 }
+#new-tweet-button:hover {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  box-shadow: 10px 10px grey;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px white, 0 0 20px white,
+    0 0 25px white, 0 0 30px white, 0 0 35px white;
+}
+
 nav p {
   margin: 0;
   font: normal;
@@ -21,7 +30,7 @@ nav p {
 @media only screen and (min-width: 1024px) {
   nav {
     display: flex;
-    position: fixed;
+    position: relative;
     background-color: #af958a;
     color: white;
   }
@@ -30,7 +39,7 @@ nav p {
 @media only screen and (min-width: 768px) {
   nav {
     display: flex;
-    position: fixed;
+    position: relative;
     background-color: #af958a;
     color: white;
   }
