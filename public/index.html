@@ -44,11 +44,11 @@
       <p><b>Write</b> a new Tweet</p>
     </nav>
     <header>
-      <div>
+      <div class="profilePic">
         <img src="/images/profile-hex.png" />
       </div>
       <br />
-      <div>
+      <div class="nameHeader">
         <h2>Your Name</h2>
       </div>
     </header>
@@ -56,15 +56,10 @@
 
     <main class="tweet-container">
       <section class="new-tweet">
-        <h2>ERROR!</h2>
+        <div id="error" class="error"><h2>ERROR!</h2></div>
         <form action="/tweets" method="POST">
           <label for="tweet-text">what's on your mind?</label><br />
-          <textarea
-            maxlength="140"
-            required
-            name="text"
-            class="tweet-text"
-          ></textarea>
+          <textarea required name="text" class="tweet-text"></textarea>
           <div class="tweet-button">
             <button type="submit" class="tweet-button">Tweet</button>
             <output id="counter" class="counter black" for="tweettext"

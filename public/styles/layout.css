@@ -20,8 +20,8 @@ body {
   display: flex;
   width: auto;
   flex-direction: column;
+  justify-content: center;
   background-color: #eee2dc;
-
   font-size: 24px;
   font-family: "Source Sans Pro", sans-serif;
 }

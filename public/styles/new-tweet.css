@@ -2,6 +2,7 @@ section.new-tweet > form {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 2em;
 }
 textarea.tweet-text {
   display: flex;
@@ -11,7 +12,7 @@ textarea.tweet-text {
   outline: none;
   resize: none;
 }
-section {
+.new-tweet {
   width: 100%;
 }
 .tweet-button {
@@ -27,6 +28,31 @@ section {
 .black {
   color: black;
 }
+
 .red {
   color: red;
+}
+
+button.tweet-button {
+  background-color: whitesmoke;
+}
+
+.error {
+  display: flex;
+  color: red;
+  justify-content: center;
+  border: solid 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
+  visibility: hidden;
+}
+.error-show {
+  display: flex;
+  color: red;
+  justify-content: center;
+  border: solid 5px;
+  width: 80%;
+  margin: auto;
+  border-radius: 15px;
 }

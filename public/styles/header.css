@@ -1,11 +1,12 @@
 header {
   display: flex;
-  height: 400px;
-  width: auto;
+  height: auto;
+  width: 100%;
   padding-top: 10em; /* To prevent the fixed navbar from covering*/
   flex-direction: column;
-  justify-content: center;
+  justify-content: row;
   align-items: center;
+
   background-color: #eee2dc;
   /* background-image: url("https://www.transparenttextures.com/patterns/type.png"); */
 
@@ -16,4 +17,8 @@ header {
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.nameHeader {
+  color: black;
 }

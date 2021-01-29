@@ -1,7 +1,13 @@
 .tweet-display {
   display: flex;
   flex-direction: column;
+  align-content: inherit;
   border: solid black;
+  padding: 1em;
+  margin: 1em;
+}
+.tweet-paragraph {
+  overflow-wrap: break-word;
 }
 
 .tweet-display:hover {
