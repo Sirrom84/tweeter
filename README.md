@@ -4,10 +4,10 @@ Tweeter is a simple, single-page Twitter clone. This was project 2 at LightHouse
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["Desktop View1"](https://github.com/Sirrom84/tweeter/blob/master/docs/desktop%20closed.png)
+!["Desktop View2"](https://github.com/Sirrom84/tweeter/blob/master/docs/desktop%20open.png)
+!["Mobile view"](https://github.com/Sirrom84/tweeter/blob/master/docs/mobile%20closed.png)
+!["Lights!"](https://github.com/Sirrom84/tweeter/blob/master/docs/mobile%20lights.png)
 
 ## Getting Started
 
