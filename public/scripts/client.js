@@ -1,8 +1,4 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
+//  jQuery is already loaded
 
 $(document).ready(function () {
   $(function () {
@@ -36,7 +32,6 @@ $(document).ready(function () {
               console.log(err);
             });
           });
-          // $('#tweet-text').val().trim() === ""
           $(".tweet-text").val("");
           $(".counter").html("140");
         },
@@ -45,6 +40,9 @@ $(document).ready(function () {
   });
 
   function createTweetElement(tweetObj) {
+    const time = new Date(tweetObj.created_at);
+    const currentTime = Date.now();
+    const dayDif = Math.floor((currentTime - time) / 1000 / 60 / 60 / 24);
     const $markup = `
     <article class="tweet-display">
     <header class='article-header'>
@@ -57,14 +55,19 @@ $(document).ready(function () {
     <body class= "article-body">
       <p class= "tweet-paragraph">${escape(tweetObj.content.text)}</p>
     </body>
-    <footer class ="article-footer">${tweetObj.created_at}</footer>
-  </article>
+    <footer class ="article-footer">${dayDif + " days ago"}
+    <div class = "footerIcons"> <i class="fas fa-flag"></i>
+    <i class="fas fa-retweet"></i>
+    <i class="fas fa-heart"></i>
+    </div>
+    </footer>
+    
+    </article>
 `;
     return $markup;
   }
 
   const renderTweets = function (tweets) {
-    // loops through tweets
     const container = $("#tweet-container");
     for (const tweet of tweets) {
       let element = createTweetElement(tweet);
@@ -78,11 +81,3 @@ const escape = function (str) {
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 };
-
-// $(document).ajaxSuccess(function(){
-//   alert("Too may characters! please use 140 or less. save some space for others 🐤");
-// });
-// $("textarea").click(function(){
-//   $("div").load("demo_ajax_load.txt");
-// });
-//working pop up but on clicking tweet button

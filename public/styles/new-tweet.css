@@ -35,11 +35,22 @@ textarea.tweet-text {
 
 button.tweet-button {
   background-color: whitesmoke;
+  outline: none;
+}
+
+button.tweet-button:hover {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid white;
+  box-shadow: 10px 10px grey;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px white, 0 0 20px white,
+    0 0 25px white, 0 0 30px white, 0 0 35px white;
 }
 
 .error {
   display: flex;
-  color: red;
+  color: whitesmoke;
+  background-color: red;
   justify-content: center;
   border: solid 5px;
   width: 80%;
@@ -49,10 +60,16 @@ button.tweet-button {
 }
 .error-show {
   display: flex;
-  color: red;
+  color: whitesmoke;
+  background-color: red;
   justify-content: center;
-  border: solid 5px;
-  width: 80%;
+  size: 3px;
+  border: solid 3px;
+  width: 60%;
+  font-size: 15px;
   margin: auto;
+  padding: 1px;
   border-radius: 15px;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px red, 0 0 20px red,
+    0 0 25px red, 0 0 30px red, 0 0 35px red;
 }

@@ -26,26 +26,16 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-/* img {
-  display: flex;
-  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e0ae00, 0 0 20px #e0ae00,
-    0 0 25px #e0ae00, 0 0 30px #e0ae00, 0 0 35px #e0ae00;
-    shaddow effect but it's around the whole box. come back to this 
-    might make a dark mode!
-} */
-
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  height: auto;
-  background-color: #eee2dc;
-  color: #ac3b61;
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: auto;
+    background-color: #eee2dc;
+    color: black;
+  }
 }
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */

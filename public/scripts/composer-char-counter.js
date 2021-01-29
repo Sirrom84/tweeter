@@ -1,3 +1,4 @@
+//char counter snd number colour changer
 $(document).ready(function () {
   console.log(" loading your jQuery!");
   $(".tweet-text").on("input ", function () {

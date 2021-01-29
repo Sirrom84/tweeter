@@ -1,24 +1,37 @@
 nav {
   font-family: "Bungee", sans-serif;
   display: flex;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
   justify-content: space-between;
   flex-wrap: wrap;
   height: 120px;
   background-color: #af958a;
-  /* background-image: url("https://www.transparenttextures.com/patterns/type.png"); */
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   padding: 1.5em;
-  color: #fff;
+  color: white;
   text-align: center;
-  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e0ac00, 0 0 20px #e0ac00,
-    0 0 25px #e0ac00, 0 0 30px #e0ac00, 0 0 35px #e0ac00; SAVE FOR DARK MODE */
 }
-
 nav p {
   margin: 0;
   font: normal;
   font-family: sans-serif;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    position: fixed;
+    background-color: #af958a;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    position: fixed;
+    background-color: #af958a;
+    color: white;
+  }
 }

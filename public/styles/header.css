@@ -1,24 +1,46 @@
-header {
+.profile {
+  display: flex;
   display: flex;
   height: auto;
   width: 100%;
-  padding-top: 10em; /* To prevent the fixed navbar from covering*/
+  padding-top: 10em; /*To prevent the fixed navbar from covering */
   flex-direction: column;
-  justify-content: row;
   align-items: center;
-
-  background-color: #eee2dc;
-  /* background-image: url("https://www.transparenttextures.com/patterns/type.png"); */
-
+  background-color: #af958a;
   color: #123c69;
   text-align: center;
-  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e0ae00, 0 0 20px #e0ae00,
-    0 0 25px #e0ae00, 0 0 30px #e0ae00, 0 0 35px #e0ae00; SAVE FOR DARK MODE*/
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
-  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 .nameHeader {
-  color: black;
+  border: none;
+  color: #123c69;
+}
+
+@media only screen and (min-width: 1024px) {
+  .profile {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-top: 10em; /*To prevent the fixed navbar from covering */
+    flex-direction: column;
+    align-items: center;
+    position: auto;
+    background-color: #eee2dc;
+    color: #123c69;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 768px) and(max-width: 1024px) {
+  .profile {
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding-top: 10em; /*To prevent the fixed navbar from covering */
+    flex-direction: column;
+    position: auto;
+    align-items: center;
+    background-color: #eee2dc;
+    color: #123c69;
+    text-align: center;
+  }
 }

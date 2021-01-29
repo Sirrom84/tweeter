@@ -15,6 +15,10 @@
   flex-direction: column;
   border: 5px solid black;
   box-shadow: 10px 10px grey;
+  box-shadow: 10px 10px grey;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px white, 0 0 20px white,
+    0 0 25px white, 0 0 30px white, 0 0 35px white;
+  /* light up feature */
 }
 
 .article-header {
@@ -23,6 +27,7 @@
   justify-content: space-between;
   padding: 0.3em;
   height: 2em;
+  overflow-wrap: break-word;
 }
 
 .header-icon {
@@ -43,4 +48,12 @@
   padding: 0.3em;
   border-top: solid black;
   border-width: 50%;
+}
+
+.footerIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: auto;
+  align-items: flex-end;
 }

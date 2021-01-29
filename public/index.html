@@ -2,6 +2,10 @@
 <html lang="en">
   <head>
     <!-- Meta Information -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -10,7 +14,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       type="text/css"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
     <!-- font import -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -43,36 +51,37 @@
       <span>tweeter 🐤 </span>
       <p><b>Write</b> a new Tweet</p>
     </nav>
-    <header>
-      <div class="profilePic">
-        <img src="/images/profile-hex.png" />
-      </div>
-      <br />
-      <div class="nameHeader">
-        <h2>Your Name</h2>
-      </div>
-    </header>
-    <!-- Page-specific (main) content here -->
 
-    <main class="tweet-container">
-      <section class="new-tweet">
-        <div id="error" class="error"><h2>ERROR!</h2></div>
-        <form action="/tweets" method="POST">
-          <label for="tweet-text">what's on your mind?</label><br />
-          <textarea required name="text" class="tweet-text"></textarea>
-          <div class="tweet-button">
-            <button type="submit" class="tweet-button">Tweet</button>
-            <output id="counter" class="counter black" for="tweettext"
-              >140</output
-            >
+    <div class="container">
+      <header class="profile">
+        <div class="profilePic">
+          <img src="/images/profile-hex.png" />
+        </div>
+        <br />
+        <div class="nameHeader">
+          <h2>@Sirrom84</h2>
+        </div>
+      </header>
+      <!-- Page-specific (main) content here -->
+
+      <main class="tweet-container">
+        <section class="new-tweet">
+          <div id="error" class="error">
+            <h2>ERROR: sorry you have a limit of 140 characters</h2>
           </div>
-        </form>
-      </section>
-
-      <section id="tweet-container"></section>
-    </main>
+          <form action="/tweets" method="POST">
+            <label for="tweet-text">what's on your mind?</label><br />
+            <textarea required name="text" class="tweet-text"></textarea>
+            <div class="tweet-button">
+              <button type="submit" class="tweet-button">Tweet</button>
+              <output id="counter" class="counter black" for="tweettext"
+                >140</output
+              >
+            </div>
+          </form>
+        </section>
+        <section id="tweet-container"></section>
+      </main>
+    </div>
   </body>
 </html>
-
-<!-- 
- -->
